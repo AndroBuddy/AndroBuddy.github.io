@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: androbuddy.github.io
+Token: 4e0ea16d3df4078616962e587d9ea4eccea39ecdf79f64e812dad6435af906ce
