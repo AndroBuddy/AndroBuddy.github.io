@@ -90,17 +90,25 @@ body {
 }
 
 #showcase h1 {
+  font-family: Raleway;
+  font-style: normal; 
   font-size: 63px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 #neohead {
+  font-family: Raleway;
+  font-style: normal; 
   font-size: 63px;
-  font-weight: bold;
+  font-weight: 900;
   color: #6779ff;
 }
 
 #dotneo {
+  font-family: Raleway;
+  font-style: normal; 
+  font-size: 63px;
+  font-weight: 900;
   color: black;
 }
 
