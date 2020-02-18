@@ -1,7 +1,7 @@
 body {
   width: 100%;
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  height: 1080px;
+  font-family: Roboto, Poppins, Raleway, sans-serif;
   background-color: #e0e5ec;
   padding: 0;
   margin: auto;
@@ -46,9 +46,16 @@ body {
 }
 
 #header a {
+  font-family: Roboto;
+  font-weight: bold;
   color: black;
   text-decoration: none;
   font-size: 20px;
+}
+
+#header a:hover span{
+  display: inline-block;
+  transform: scake(0.98);
 }
 
 #header .current a {
@@ -67,11 +74,15 @@ body {
 }
 
 #branding h1 {
+  font-family: Poppins;
+  font-weight: bold;
   margin: 0;
-  font-size: 45px;
+  font-size: 20px;
 }
 
 #dothead {
+  font-family: Poppins;
+  font-weight: bold;
   color: #63abff;
 }
 
@@ -81,8 +92,8 @@ body {
 
 /*Showcase*/
 #showcase {
-  height: 650px;
-  margin-top: 20px;
+  height: 50%;
+  margin-top: 30px;
   box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
     -9px -9px 16px rgba(255, 255, 255, 0.25);
   border-radius: 10px;
@@ -93,9 +104,11 @@ body {
   font-family: Raleway;
   font-size: 63px;
   font-weight: 900;
+  margin-bottom: 5px;
 }
 
 #neohead {
+  margin-top: 0;
   font-family: Raleway;
   font-size: 63px;
   font-weight: 900;
@@ -103,37 +116,403 @@ body {
 }
 
 #dotneo {
-  font-family: Raleway;
-  font-size: 63px;
-  font-weight: 900;
   color: black;
 }
 
 /*About Me*/
 #aboutme {
-  margin-top: 50px;
+  margin-top: 70px;
   background-color: #e0e5ec;
   box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
-    -9px -9px 16px rgba(255, 255, 255, 0.25);
+             -9px -9px 16px rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   width: 200px;
   text-align: center;
-  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  font-family: Poppins;
+  font-size: 18px;
   font-weight: bold;
+  letter-spacing: 3px;
   height: 60px;
+}
+
+#aboutme:hover{
+  box-shadow: inset 9px 9px 13px rgba(163, 177, 198, 0.25),
+              inset -9px -9px 16px rgba(255, 255, 255, 0.25);
+}
+
+#aboutme:hover span{
+  display: inline-block;
+  transform: scake(0.98);
+}
+
+#aboutme a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+#aboutme h3{
+  margin: 0;
+  margin-top: 13px;
 }
 
 /*Social Icons*/
 #social {
+  margin: auto;
   margin-top: 70px;
   background-color: #e0e5ec;
   box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
     -9px -9px 16px rgba(255, 255, 255, 0.25);
   border-radius: 10px;
-  width: 200px;
+  width: 300px;
   text-align: center;
   height: 60px;
   text-align: center;
   font-size: 17px;
   font-weight: bold;
+}
+
+/*---------------------------------------------------------*/
+
+/*Media Query*/
+
+@media (max-width: 500px) {
+  body {
+    margin: auto;
+    width: 100%;
+    align: auto;
+    max-height: 900px;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
+      -9px -9px 16px rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    padding: 0;
+  }
+
+  #sideimage {
+    visibility: hidden;
+  }
+
+  #main {
+    float: none;
+    background-color: #e0e5ec;
+    width: 85%;
+    -webkit-box-sizing: border-box;
+    padding: 3%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  #header {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 1px;
+  }
+  #branding h1 {
+    margin: 0;
+    margin-top: 9.8px;
+    font-family: Poppins;
+    font-size: 12px;
+  }
+
+  #header li {
+    float: left;
+    display: inline;
+    font-weight: bold;
+    padding: 0 8px 0 8px;
+  }
+
+  #header a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  #showcase {
+    height: 50%;
+    margin: auto;
+    margin-top: 18px;
+    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
+      -5px -5px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+
+  #showcase h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  #neohead {
+    font-size: 40px;
+    font-weight: bold;
+    color: #6779ff;
+  }
+
+  #aboutme {
+    margin-top: 30px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
+      -5px -5px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+  }
+  
+#aboutme a{
+  text-decoration: none;
+}  
+
+  /*Social Icons*/
+  #social {
+    margin: auto;
+    margin-top: 40px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
+      -5px -5px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    height: 55px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+/*-------------------------------------------------*/
+
+@media (max-width: 425px) {
+  body {
+    margin: auto;
+    width: 100%;
+    align: auto;
+    max-height: 850px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  #sideimage {
+    visibility: hidden;
+  }
+
+  #main {
+    float: none;
+    background-color: #e0e5ec;
+    width: 85%;
+    -webkit-box-sizing: border-box;
+    padding: 3%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  #header {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 1px;
+  }
+  #branding h1 {
+    margin: 0;
+    margin-top: 9.8px;
+    font-family: Poppins;
+    font-size: 11px;
+  }
+
+  #header li {
+    float: left;
+    display: inline;
+    font-weight: bold;
+    padding: 0 2px 0 7px;
+  }
+
+  #header a {
+    color: black;
+    text-decoration: none;
+    font-size: 11px;
+  }
+
+  #showcase {
+    height: 47%;
+    margin: auto;
+    margin-top: 18px;
+    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
+      -5px -5px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+
+  #showcase h1 {
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  #neohead {
+    font-size: 33px;
+    font-weight: bold;
+    color: #6779ff;
+  }
+
+  #aboutme {
+    margin-top: 35px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
+      -5px -5px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+  }
+  
+#aboutme a{
+  text-decoration: none;
+}  
+
+  /*Social Icons*/
+  #social {
+    margin: auto;
+    margin-top: 40px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
+      -5px -5px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    height: 55px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+/*-------------------------------------------------*/
+
+@media (max-width: 380px) {
+  #main,
+  #branding,
+  #header li {
+    float: none;
+  }
+
+  body {
+    margin: auto;
+    width: 100%;
+    align: auto;
+    max-height: 800px;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  #sideimage {
+    visibility: hidden;
+  }
+
+  #main {
+    background-color: #e0e5ec;
+    width: 85%;
+    -webkit-box-sizing: border-box;
+    padding: 3%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  #header {
+    margin-top: 8px;
+    margin-bottom: 15px;
+  }
+
+  #branding {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  #header li {
+    float: none;
+    text-align: center;
+    display: inline;
+    font-weight: bold;
+    padding: 0 13px 0 0px;
+  }
+
+  #branding h1 {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 27px;
+  }
+
+  #header a {
+    color: black;
+    text-decoration: none;
+    font-size: 9px;
+    text-align: center;
+    margin-right: 27px;
+  }
+
+  #showcase {
+    height: 45%;
+    margin: auto;
+    margin-top: 18px;
+    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
+      -5px -5px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+
+  #showcase h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  #neohead {
+    font-size: 30px;
+    font-weight: bold;
+    color: #6779ff;
+  }
+
+  #aboutme {
+    margin-top: 35px;
+    background-color: #e0e5ec;
+    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
+      -5px -5px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+  }
+  
+#aboutme a{
+  text-decoration: none;
+}  
+
+  /*Social Icons*/
+  #social {
+    margin: auto;
+    margin-top: 40px;
+    background-color: #e0e5ec;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
+      -9px -9px 16px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    height: 55px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
