@@ -189,9 +189,19 @@ body {
 }
 
 .icons {
-  height: 50%;
-  width: 50%;
+	height: 50%;
+	width: 50%;
 }
+
+.socialicons:hover{
+  box-shadow: inset 5px 5px 10px rgba(163, 177, 198, 0.25),
+              inset -5px -5px 10px rgba(255, 255, 255, 0.25);
+}
+
+.socialicons:hover span{
+  display: inline-block;
+  transform: scale(2);
+}  
 
 #footer {
   margin: auto;
@@ -324,9 +334,8 @@ body {
   }
 
   .icons {
-    height: 80%;
-    width: 85%;
     margin: 0;
+    margin-top: 9.3px;
     padding: 0;
   }
 }
@@ -432,8 +441,8 @@ body {
 
   .socialicons {
     float: left;
-    margin: 25px;
-    margin-left: 0px;
+    margin: 20px;
+    margin-left: 5px;
     box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
       -5px -5px 10px rgba(255, 255, 255, 0.25);
     border-radius: 5px;
@@ -442,9 +451,8 @@ body {
   }
 
   .icons {
-    height: 80%;
-    width: 85%;
     margin: 0;
+    margin-top: 9.3px;
     padding: 0;
   }
 }  
@@ -573,9 +581,8 @@ body {
   }
 
   .icons {
-    height: 80%;
-    width: 85%;
     margin: 0;
+    margin-top: 9.3px;
     padding: 0;
   }
 }
