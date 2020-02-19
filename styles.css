@@ -170,18 +170,27 @@ body {
 
 /*Social Icons*/
 #social {
-  margin: auto;
   margin-top: 70px;
   background-color: #e0e5ec;
-  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
-    -9px -9px 16px rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-  height: 60px;
-  text-align: center;
-  font-size: 17px;
-  font-weight: bold;
+  width: 200px;
+  height: 35px;
+}
+
+.socialicons {
+  float: left;
+  margin: 30px;
+  margin-left: 0px;
+  align-content: left;
+  box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+}
+
+.icons {
+  height: 50%;
+  width: 50%;
 }
 
 #footer {
@@ -295,18 +304,30 @@ body {
 
   /*Social Icons*/
   #social {
-    margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-left: 0px;
     background-color: #e0e5ec;
-    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
-      -5px -5px 8px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
     width: 300px;
     text-align: center;
     height: 55px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
+  }
+
+  .socialicons {
+    float: left;
+    margin: 25px;
+    margin-left: 0px;
+    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
+      -5px -5px 10px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .icons {
+    height: 80%;
+    width: 85%;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -387,9 +408,6 @@ body {
   #aboutme {
     margin-top: 35px;
     background-color: #e0e5ec;
-    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
-      -5px -5px 8px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
     width: 150px;
     text-align: center;
     color: black;
@@ -404,20 +422,32 @@ body {
 
   /*Social Icons*/
   #social {
-    margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-left: 0px;
     background-color: #e0e5ec;
-    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
-      -5px -5px 8px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
     width: 300px;
     text-align: center;
     height: 55px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
   }
-}
+
+  .socialicons {
+    float: left;
+    margin: 25px;
+    margin-left: 0px;
+    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
+      -5px -5px 10px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .icons {
+    height: 80%;
+    width: 85%;
+    margin: 0;
+    padding: 0;
+  }
+}  
 
 /*-------------------------------------------------*/
 
@@ -524,17 +554,28 @@ body {
 
   /*Social Icons*/
   #social {
-    margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
     background-color: #e0e5ec;
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
-      -9px -9px 16px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
     width: 300px;
     text-align: center;
     height: 55px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
+  }
+
+  .socialicons {
+    float: left;
+    margin: 25px;
+    align-content: left;
+    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
+      -5px -5px 10px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .icons {
+    height: 80%;
+    width: 85%;
+    margin: 0;
+    padding: 0;
   }
 }
