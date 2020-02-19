@@ -351,6 +351,11 @@ body {
     width: 35px;
   }
 
+  .socialicons:hover {
+    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4),
+      inset -1px -1px 3px rgba(255, 255, 255, 0.4);
+  }
+
   .icons {
     height: 50%;
     width: 50%;
@@ -479,6 +484,11 @@ body {
     border-radius: 5px;
     height: 35px;
     width: 35px;
+  }
+
+  .socialicons:hover {
+    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4),
+      inset -1px -1px 3px rgba(255, 255, 255, 0.4);
   }
 
   .icons {
@@ -625,6 +635,11 @@ body {
     border-radius: 5px;
     height: 30px;
     width: 30px;
+  }
+
+  .socialicons:hover {
+    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4),
+      inset -1px -1px 3px rgba(255, 255, 255, 0.4);
   }
 
   .icons {
