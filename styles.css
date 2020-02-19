@@ -1,13 +1,20 @@
 body {
-  width: 100%;
+  width: 1440px;
   height: 1080px;
   font-family: Roboto, Poppins, Raleway, sans-serif;
   background-color: #e0e5ec;
+
+  /*if want to use backgroung image
+
+  background: url(sourceHere) no-repeat;  */
+
   padding: 0;
   margin: auto;
+  margin-top: 25px;
   align: auto;
   box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
     -9px -9px 16px rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
 }
 
 /*Global*/
@@ -18,13 +25,15 @@ body {
 
 /*Main Content*/
 #main {
-	overflow: visible;
+  overflow: visible;
   float: left;
   background-color: #e0e5ec;
   width: 50%;
   height: 100%;
   -webkit-box-sizing: border-box;
   padding: 55px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 /*Side Image*/
@@ -34,16 +43,20 @@ body {
   height: 100%;
   -webkit-box-sizing: border-box;
   background: url(image/sideimglight.png);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /*Header*/
 #header {
   height: 50px;
   padding: 10px;
+  padding-top: 0px;
+  margin-top: 0;
 }
 
 #branding {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 #header a {
@@ -54,7 +67,7 @@ body {
   font-size: 20px;
 }
 
-#header a:hover span{
+#header a:hover span {
   display: inline-block;
   transform: scale(2);
 }
@@ -76,10 +89,10 @@ body {
 
 #branding h1 {
   font-family: Poppins;
-  font-weight: bold;
-  margin: 0;
-  margin-top: 9.8px;
-  font-size: 20px;
+  font-weight: 600;
+  6margin: 0;
+  margin-top: 0;
+  font-size: 40px;
 }
 
 #dothead {
@@ -136,7 +149,7 @@ body {
   margin-top: 70px;
   background-color: #e0e5ec;
   box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
-             -9px -9px 16px rgba(255, 255, 255, 0.25);
+    -9px -9px 16px rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   width: 200px;
   text-align: center;
@@ -148,23 +161,23 @@ body {
   height: 60px;
 }
 
-#aboutme:hover{
+#aboutme:hover {
   box-shadow: inset 5px 5px 10px rgba(163, 177, 198, 0.25),
-              inset -9px -9px 16px rgba(255, 255, 255, 0.25);
+    inset -9px -9px 16px rgba(255, 255, 255, 0.25);
 }
 
-#aboutme:hover span{
+#aboutme:hover span {
   display: inline-block;
   transform: scale(2);
 }
 
-#aboutme a{
+#aboutme a {
   text-decoration: none;
   text-align: center;
   color: black;
 }
 
-#aboutme h3{
+#aboutme h3 {
   margin: 0;
   margin-top: 13px;
 }
@@ -172,39 +185,39 @@ body {
 /*Social Icons*/
 #social {
   margin-top: 70px;
+  margin-left: -15px;
   background-color: #e0e5ec;
-  width: 200px;
-  height: 60px;
+  width: 350px;
+  height: 70px;
+  padding-left: 5px;
 }
 
 .socialicons {
   float: left;
-  margin: 30px;
-  margin-left: 0px;
-  align-content: left;
+  margin: 10px;
   box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
     -5px -5px 10px rgba(255, 255, 255, 0.25);
   border-radius: 5px;
-  height: 35px;
-  width: 35px;
+  height: 55px;
+  width: 55px;
 }
 
 .icons {
-	height: 50%;
-	width: 50%;
-	margin-top: 9.1px;
-	margin-left: 8.7px;
+  height: 50%;
+  width: 50%;
+  margin-top: 15px;
+  margin-left: 13px;
 }
 
-.socialicons:hover{
+.socialicons:hover {
   box-shadow: inset 5px 5px 10px rgba(163, 177, 198, 0.25),
-              inset -5px -5px 10px rgba(255, 255, 255, 0.25);
+    inset -5px -5px 10px rgba(255, 255, 255, 0.25);
 }
 
-.socialicons:hover span{
+.socialicons:hover span {
   display: inline-block;
   transform: scale(2);
-}  
+}
 
 #footer {
   margin: auto;
@@ -217,7 +230,7 @@ body {
   font-family: Roboto;
   font-weight: 200;
   font-size: 8px;
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 
 /*---------------------------------------------------------*/
@@ -230,14 +243,17 @@ body {
     width: 100%;
     align: auto;
     max-height: 900px;
+    background-color: #e0e5ec;
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
       -9px -9px 16px rgba(255, 255, 255, 0.25);
     overflow: hidden;
     padding: 0;
+    border-radius: 0;
   }
 
   #sideimage {
     visibility: hidden;
+    border-radius: 0;
   }
 
   #main {
@@ -248,6 +264,7 @@ body {
     padding: 3%;
     overflow: hidden;
     margin: auto;
+    border-radius: 0;
   }
 
   #header {
@@ -259,14 +276,14 @@ body {
     margin: 0;
     margin-top: 9.8px;
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 27px;
   }
 
   #header li {
     float: left;
     display: inline;
     font-weight: bold;
-    padding: 0 2px 0 8px;
+    padding: 0 15px 0 8px;
   }
 
   #header a {
@@ -310,38 +327,44 @@ body {
     font-weight: bold;
     height: 50px;
   }
-  
-#aboutme a{
-  text-decoration: none;
-}  
+
+  #aboutme a {
+    text-decoration: none;
+  }
 
   /*Social Icons*/
   #social {
     margin-top: 30px;
-    margin-left: 0px;
+    margin-left: -19px;
     background-color: #e0e5ec;
     width: 300px;
     text-align: center;
-    height: 55px;
+    height: 60px;
   }
 
   .socialicons {
     float: left;
     margin: 25px;
-    margin-left: 0px;
-    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
-      -5px -5px 10px rgba(255, 255, 255, 0.25);
+    margin-top: 15px;
+    margin-left: 17px;
+    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4),
+      -1px -1px 3px rgba(255, 255, 255, 0.4);
     border-radius: 5px;
+
     height: 35px;
     width: 35px;
   }
 
   .icons {
-  	height: 50%;
-	width: 50%;
+    height: 50%;
+    width: 50%;
     margin: 0;
     margin-top: 9.3px;
     padding: 0;
+  }
+  #footer {
+    margin: auto;
+    margin-top: 60px;
   }
 }
 
@@ -352,13 +375,16 @@ body {
     margin: auto;
     width: 100%;
     align: auto;
-    max-height: 850px;
+    height: 800px;
+    background-color: #e0e5ec;
     overflow: hidden;
     padding: 0;
+    border-radius: 0;
   }
 
   #sideimage {
     visibility: hidden;
+    border-radius: 0;
   }
 
   #main {
@@ -369,6 +395,7 @@ body {
     padding: 3%;
     overflow: hidden;
     margin: auto;
+    border-radius: 0;
   }
 
   #header {
@@ -381,14 +408,14 @@ body {
     margin-top: 9.8px;
     font-family: Poppins;
     font-weight: extra-bold;
-    font-size: 11px;
+    font-size: 23px;
   }
 
   #header li {
     float: left;
     display: inline;
     font-weight: bold;
-    padding: 0 2px 0 7px;
+    padding: 0 15px 0 7px;
   }
 
   #header a {
@@ -398,7 +425,7 @@ body {
   }
 
   #showcase {
-    height: 47%;
+    height: 43%;
     margin: auto;
     margin-top: 18px;
     box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
@@ -429,41 +456,47 @@ body {
     font-weight: bold;
     height: 50px;
   }
-  
-#aboutme a{
-  text-decoration: none;
-}  
+
+  #aboutme a {
+    text-decoration: none;
+  }
 
   /*Social Icons*/
   #social {
-  	overflow: visible;
+    overflow: visible;
     margin-top: 30px;
-    margin-left: 0px;
+    margin-left: -7px;
     background-color: #e0e5ec;
     width: 300px;
     text-align: center;
-    height: 55px;
+    height: 60px;
   }
 
   .socialicons {
     float: left;
-    margin: 20px;
-    margin-left: 0px;
-    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
-      -5px -5px 10px rgba(255, 255, 255, 0.25);
+    margin: 25px;
+    margin-top: 15px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4),
+      -1px -1px 3px rgba(255, 255, 255, 0.4);
     border-radius: 5px;
     height: 35px;
     width: 35px;
   }
 
   .icons {
-  	height: 50%;
-	width: 50%;
+    height: 50%;
+    width: 50%;
     margin: 0;
     margin-top: 9.3px;
     padding: 0;
   }
-}  
+
+  #footer {
+    margin: auto;
+    margin-top: 60px;
+  }
+}
 
 /*-------------------------------------------------*/
 
@@ -479,12 +512,15 @@ body {
     width: 100%;
     align: auto;
     max-height: 800px;
+    background-color: #e0e5ec;
     overflow: hidden;
     padding: 0;
+    border-radius: 0;
   }
 
   #sideimage {
     visibility: hidden;
+    border-radius: 0;
   }
 
   #main {
@@ -494,16 +530,18 @@ body {
     padding: 3%;
     overflow: hidden;
     margin: auto;
+    border-radius: 0;
   }
 
   #header {
     margin-top: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   #branding {
     text-align: center;
     margin-top: 0px;
+    margin-bottom: -10px;
   }
 
   #header li {
@@ -511,7 +549,7 @@ body {
     text-align: center;
     display: inline;
     font-weight: bold;
-    padding: 0 13px 0 0px;
+    padding: 0 50px 0 0px;
   }
 
   #branding h1 {
@@ -529,9 +567,9 @@ body {
   }
 
   #showcase {
-    height: 45%;
+    height: 40%;
     margin: auto;
-    margin-top: 18px;
+    margin-top: 23px;
     box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
       -5px -5px 8px rgba(255, 255, 255, 0.25);
     border-radius: 10px;
@@ -563,36 +601,44 @@ body {
     font-weight: bold;
     height: 50px;
   }
-  
-#aboutme a{
-  text-decoration: none;
-}  
+
+  #aboutme a {
+    text-decoration: none;
+  }
 
   /*Social Icons*/
   #social {
     margin-top: 30px;
+    margin-left: -32px;
     background-color: #e0e5ec;
     width: 300px;
     text-align: center;
-    height: 55px;
+    height: 60px;
   }
 
   .socialicons {
     float: left;
-    margin: 25px;
-    align-content: left;
-    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
-      -5px -5px 10px rgba(255, 255, 255, 0.25);
+    margin: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: -5px;
+    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4),
+      -1px -1px 3px rgba(255, 255, 255, 0.4);
     border-radius: 5px;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
   }
 
   .icons {
-  	height: 50%;
-	width: 50%;
+    height: 50%;
+    width: 50%;
     margin: 0;
     margin-top: 9.3px;
     padding: 0;
+  }
+
+  #footer {
+    margin: auto;
+    margin-top: 60px;
   }
 }
