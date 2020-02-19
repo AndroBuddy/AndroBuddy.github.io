@@ -18,6 +18,7 @@ body {
 
 /*Main Content*/
 #main {
+	overflow: visible;
   float: left;
   background-color: #e0e5ec;
   width: 50%;
@@ -173,7 +174,7 @@ body {
   margin-top: 70px;
   background-color: #e0e5ec;
   width: 200px;
-  height: 35px;
+  height: 60px;
 }
 
 .socialicons {
@@ -435,6 +436,7 @@ body {
 
   /*Social Icons*/
   #social {
+  	overflow: visible;
     margin-top: 30px;
     margin-left: 0px;
     background-color: #e0e5ec;
@@ -446,7 +448,7 @@ body {
   .socialicons {
     float: left;
     margin: 20px;
-    margin-left: 5px;
+    margin-left: 0px;
     box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
       -5px -5px 10px rgba(255, 255, 255, 0.25);
     border-radius: 5px;
