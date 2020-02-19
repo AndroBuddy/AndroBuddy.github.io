@@ -3,6 +3,7 @@ body {
   height: 1080px;
   font-family: Roboto, Poppins, Raleway, sans-serif;
   background: url(image/background.svg) no-repeat;
+  background-size: 100%;
   padding: 0;
   margin: auto;
   margin-top: 25px;
@@ -238,7 +239,7 @@ body {
     width: 100%;
     align: auto;
     max-height: 900px;
-    background-color: #e0e5ec; 
+    background-color: #e0e5ec;
     background: url(image/bg.svg);
     box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
       -9px -9px 16px rgba(255, 255, 255, 0.25);
