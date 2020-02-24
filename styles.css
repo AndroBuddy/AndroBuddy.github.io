@@ -1,658 +1,204 @@
-body {
-  width: 1440px;
-  height: 1080px;
-  font-family: Roboto, Poppins, Raleway, sans-serif;
-  background: url(image/background.svg) no-repeat;
-  background-size: 100%;
-  padding: 0;
-  margin: auto;
-  margin-top: 25px;
-  align: auto;
-  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
-    -9px -9px 16px rgba(255, 255, 255, 0.25);
-  border-radius: 15px;
-}
-
-/*Global*/
-.container {
-  margin: auto;
-  overflow: hidden;
-}
-
-/*Main Content*/
-#main {
-  overflow: visible;
-  float: left;
-  background-color: #e0e5ec;
-  width: 50%;
-  height: 100%;
-  -webkit-box-sizing: border-box;
-  padding: 55px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-
-/*Side Image*/
-#sideimage {
-  float: right;
-  width: 50%;
-  height: 100%;
-  -webkit-box-sizing: border-box;
-  background: url(image/sideimglight.png);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-/*Header*/
-#header {
-  height: 50px;
-  padding: 10px;
-  padding-top: 0px;
-  margin-top: 0;
-}
-
-#branding {
-  margin-top: 0px;
-}
-
-#header a {
-  font-family: Roboto;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-#header a:hover span {
-  display: inline-block;
-  transform: scale(2);
-}
-
-#header .current a {
-  color: #63abff;
-}
-
-#header li {
-  float: left;
-  display: inline;
-  font-weight: bold;
-  padding: 0 20px 0 25px;
-}
-
-#branding {
-  float: left;
-}
-
-#branding h1 {
-  font-family: Poppins;
-  font-weight: 600;
-  6margin: 0;
-  margin-top: 0;
-  font-size: 40px;
-}
-
-#dothead {
-  font-family: Poppins;
-  font-weight: bold;
-  color: #63abff;
-}
-
-#header nav {
-  float: right;
-}
-
-/*Showcase*/
-#showcase {
-  height: 50%;
-  margin-top: 30px;
-  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
-    -9px -9px 16px rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  padding-left: 20px;
-}
-
-#showcase h1 {
-  font-family: Raleway;
-  font-size: 63px;
-  font-weight: 900;
-  margin-bottom: 5px;
-}
-
-#neohead {
-  margin-top: 0;
-  font-family: Raleway;
-  font-size: 63px;
-  font-weight: 900;
-  color: #6779ff;
-}
-
-#dotneo {
-  color: black;
-}
-
-#showcase h2 {
-  font-family: Poppins;
-  font-size: 15px;
-  font-weight: 200;
-  padding-top: 30px;
-  margin-top: 10px;
-  margin-right: 10px;
-  color: #717171;
-}
-
-/*About Me*/
-#aboutme {
-  margin-top: 70px;
-  background-color: #e0e5ec;
-  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
-    -9px -9px 16px rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  width: 200px;
-  text-align: center;
-  color: black;
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  height: 60px;
-}
-
-#aboutme:hover {
-  box-shadow: inset 5px 5px 10px rgba(163, 177, 198, 0.25),
-    inset -9px -9px 16px rgba(255, 255, 255, 0.25);
-}
-
-#aboutme:hover span {
-  display: inline-block;
-  transform: scale(2);
-}
-
-#aboutme a {
-  text-decoration: none;
-  text-align: center;
-  color: black;
-}
-
-#aboutme h3 {
-  margin: 0;
-  margin-top: 13px;
-}
-
-/*Social Icons*/
-#social {
-  margin-top: 70px;
-  margin-left: -15px;
-  background-color: #e0e5ec;
-  width: 350px;
-  height: 70px;
-  padding-left: 5px;
-}
-
-.socialicons {
-  float: left;
-  margin: 10px;
-  box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.25),
-    -5px -5px 10px rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
-  height: 55px;
-  width: 55px;
-}
-
-.icons {
-  height: 50%;
-  width: 50%;
-  margin-top: 15px;
-  margin-left: 13px;
-}
-
-.socialicons:hover {
-  box-shadow: inset 5px 5px 10px rgba(163, 177, 198, 0.25),
-    inset -5px -5px 10px rgba(255, 255, 255, 0.25);
-}
-
-.socialicons:hover span {
-  display: inline-block;
-  transform: scale(2);
-}
-
-#footer {
-  margin: auto;
-  margin-top: 120px;
-}
-
-#footer h5 {
-  margin: 0;
-  text-align: center;
-  font-family: Roboto;
-  font-weight: 200;
-  font-size: 8px;
-  color: #b3b3b3;
-}
-
-/*---------------------------------------------------------*/
-
-/*Media Query*/
-
-@media (max-width: 500px) {
-  body {
+ body{
     margin: auto;
     width: 100%;
     align: auto;
-    max-height: 900px;
+    font-family: Raleway, Poppins, Roboto, sans-serif;
+    min-height: 100vh;
     background-color: #e0e5ec;
-    background: url(image/bg.svg);
-    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25),
-      -9px -9px 16px rgba(255, 255, 255, 0.25);
-    overflow: hidden;
     padding: 0;
-    border-radius: 0;
-  }
+}
 
-  #sideimage {
-    visibility: hidden;
-    border-radius: 0;
-  }
+/* Title Bar */
+#title{
+    position: absolute;
+    width: 333.77px;
+    height: 20px;
+    left: 39px;
+    top: 44px;
+}
 
-  #main {
-    float: none;
-    background-color: #e0e5ec;
-    width: 85%;
-    -webkit-box-sizing: border-box;
-    padding: 3%;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 0;
-  }
-
-  #header {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 1px;
-  }
-  #branding h1 {
-    margin: 0;
-    margin-top: 9.8px;
+/* Andro. */
+#branding{
     font-family: Poppins;
-    font-size: 27px;
-  }
-
-  #header li {
+    font-weight: 600;
+    margin: 0;
+    margin-top: 0;
+    font-size: 18px;
     float: left;
-    display: inline;
-    font-weight: bold;
-    padding: 0 15px 0 8px;
-  }
+}
 
-  #header a {
-    color: black;
-    text-decoration: none;
+#dot{
+    font-family: Poppins;
+    font-size: 18px;
+    color: #63abff;
+}
+
+/* Tabs */
+.tabs{
+    font-family: Roboto;
+    font-weight: bold;
     font-size: 12px;
-  }
-
-  #showcase {
-    height: 50%;
-    margin: auto;
-    margin-top: 18px;
-    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
-      -5px -5px 8px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-    padding-left: 20px;
-  }
-
-  #showcase h1 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  #neohead {
-    font-size: 40px;
-    font-weight: bold;
-    color: #6779ff;
-  }
-
-  #aboutme {
-    margin-top: 30px;
-    background-color: #e0e5ec;
-    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
-      -5px -5px 8px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-    width: 150px;
-    text-align: center;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    height: 50px;
-  }
-
-  #aboutme a {
-    text-decoration: none;
-  }
-
-  /*Social Icons*/
-  #social {
-    margin-top: 30px;
-    margin-left: -19px;
-    background-color: #e0e5ec;
-    width: 300px;
-    text-align: center;
-    height: 60px;
-  }
-
-  .socialicons {
-    float: left;
-    margin: 25px;
-    margin-top: 15px;
-    margin-left: 17px;
-    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4),
-      -1px -1px 3px rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-
-    height: 35px;
-    width: 35px;
-  }
-
-  .socialicons:hover {
-    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4),
-      inset -1px -1px 3px rgba(255, 255, 255, 0.4);
-  }
-
-  .icons {
-    height: 50%;
-    width: 50%;
-    margin: 0;
-    margin-top: 9.3px;
-    padding: 0;
-  }
-  #footer {
-    margin: auto;
-    margin-top: 60px;
-  }
 }
 
-/*-------------------------------------------------*/
-
-@media (max-width: 425px) {
-  body {
-    margin: auto;
-    width: 100%;
-    align: auto;
-    height: 800px;
-    background-color: #e0e5ec;
-    background: url(image/bg.svg);
-    overflow: hidden;
-    padding: 0;
-    border-radius: 0;
-  }
-
-  #sideimage {
-    visibility: hidden;
-    border-radius: 0;
-  }
-
-  #main {
-    float: none;
-    background-color: #e0e5ec;
-    width: 85%;
-    -webkit-box-sizing: border-box;
-    padding: 3%;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 0;
-  }
-
-  #header {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 1px;
-  }
-  #branding h1 {
-    margin: 0;
-    margin-top: 9.8px;
-    font-family: Poppins;
-    font-weight: extra-bold;
-    font-size: 23px;
-  }
-
-  #header li {
-    float: left;
-    display: inline;
-    font-weight: bold;
-    padding: 0 15px 0 7px;
-  }
-
-  #header a {
-    color: black;
+#home{
+    position: absolute;
+    left: 68%;
+    top: calc(50% - 15px/2 + 2px);
+    color: #6779FF;
     text-decoration: none;
-    font-size: 11px;
-  }
-
-  #showcase {
-    height: 43%;
-    margin: auto;
-    margin-top: 18px;
-    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
-      -5px -5px 8px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-    padding-left: 20px;
-  }
-
-  #showcase h1 {
-    font-size: 33px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  #neohead {
-    font-size: 33px;
-    font-weight: bold;
-    color: #6779ff;
-  }
-
-  #aboutme {
-    margin-top: 35px;
-    background-color: #e0e5ec;
-    width: 150px;
-    text-align: center;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    height: 50px;
-  }
-
-  #aboutme a {
-    text-decoration: none;
-  }
-
-  /*Social Icons*/
-  #social {
-    overflow: visible;
-    margin-top: 30px;
-    margin-left: -7px;
-    background-color: #e0e5ec;
-    width: 300px;
-    text-align: center;
-    height: 60px;
-  }
-
-  .socialicons {
-    float: left;
-    margin: 25px;
-    margin-top: 15px;
-    margin-left: 5px;
-    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4),
-      -1px -1px 3px rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-    height: 35px;
-    width: 35px;
-  }
-
-  .socialicons:hover {
-    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4),
-      inset -1px -1px 3px rgba(255, 255, 255, 0.4);
-  }
-
-  .icons {
-    height: 50%;
-    width: 50%;
-    margin: 0;
-    margin-top: 9.3px;
-    padding: 0;
-  }
-
-  #footer {
-    margin: auto;
-    margin-top: 60px;
-  }
 }
 
-/*-------------------------------------------------*/
+#contact{
+    position: absolute;
+    left: 86%;
+    top: calc(50% - 15px/2 + 2px);
+    color: #424242;
+    text-decoration: none;
+}
 
-@media (max-width: 380px) {
-  #main,
-  #branding,
-  #header li {
-    float: none;
-  }
+/* Body */
+#main{
+    position: absolute;
+    width: 333px;
+    height: 526px;
+} 
 
-  body {
-    margin: auto;
-    width: 100%;
-    align: auto;
-    max-height: 800px;
-    background-color: #e0e5ec;
-    background: url(image/bg.svg);
-    overflow: hidden;
-    padding: 0;
-    border-radius: 0;
-  }
+#textbox{
+    position: absolute;
+    width: 333px;
+    height: 380px;
+    left: 39px;
+    top: 100px;
+    background: #E0E5EC;
+    box-shadow: inset 9px 9px 16px rgba(163, 177, 198, 0.25), 
+                inset -9px -9px 16px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
 
-  #sideimage {
-    visibility: hidden;
-    border-radius: 0;
-  }
+ #toptext{
+    position: absolute;
+    height: 98px;
+    width: 291px; 
+    left: 21px;
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
 
-  #main {
-    background-color: #e0e5ec;
-    width: 85%;
-    -webkit-box-sizing: border-box;
-    padding: 3%;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 0;
-  }
+#neo{
+    color: #6779FF;
+} 
 
-  #header {
-    margin-top: 8px;
-    margin-bottom: 20px;
-  }
-
-  #branding {
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: -10px;
-  }
-
-  #header li {
-    float: none;
-    text-align: center;
-    display: inline;
-    font-weight: bold;
-    padding: 0 50px 0 0px;
-  }
-
-  #branding h1 {
-    margin: 0;
+#neodot{
+    color: #000000;
     font-family: Poppins;
-    font-size: 27px;
-  }
+}
 
-  #header a {
-    color: black;
-    text-decoration: none;
-    font-size: 9px;
-    text-align: center;
-    margin-right: 27px;
-  }
-
-  #showcase {
-    height: 40%;
-    margin: auto;
-    margin-top: 23px;
-    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
-      -5px -5px 8px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-    padding-left: 20px;
-  }
-
-  #showcase h1 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  #neohead {
-    font-size: 30px;
-    font-weight: bold;
-    color: #6779ff;
-  }
-
-  #aboutme {
-    margin-top: 35px;
-    background-color: #e0e5ec;
-    box-shadow: 5px 5px 8px rgba(163, 177, 198, 0.25),
-      -5px -5px 8px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-    width: 150px;
-    text-align: center;
-    color: black;
+#text{
+    position: absolute;
+    height: 125px;
+    left: 6.31%;
+    right: 6.31%;
+    top: calc(50% - 125px/2 + 17px);
+    font-family: Poppins;
+    font-weight: 500;
     font-size: 14px;
-    font-weight: bold;
-    height: 50px;
-  }
+    line-height: 24.5px;
+    color: #8B8B8B;
+}
 
-  #aboutme a {
+/* Button  */
+#abtme{
+    position: absolute;
     text-decoration: none;
-  }
+    padding: 16px 18px;
+    top: 510px;
+    left: 39px;
+    background: #E0E5EC;
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.25), 
+               -9px -9px 16px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center; 
+    letter-spacing: 3px;
+    color: #000000;
+}
 
-  /*Social Icons*/
-  #social {
-    margin-top: 30px;
-    margin-left: -32px;
-    background-color: #e0e5ec;
-    width: 300px;
-    text-align: center;
-    height: 60px;
-  }
+#abtme:hover{
+    box-shadow: inset 9px 9px 16px rgba(163, 177, 198, 0.25), 
+               inset -9px -9px 16px rgba(255, 255, 255, 0.25);
+}
 
-  .socialicons {
-    float: left;
-    margin: 20px;
-    margin-top: 15px;
-    margin-left: 30px;
-    margin-right: -5px;
-    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4),
-      -1px -1px 3px rgba(255, 255, 255, 0.4);
+#abtme:hover span{
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+/* Social Icons */
+#social{
+    position: absolute;
+    width: 147px;
+    height: 35px;
+    left: 39px;
+    top: 630px;
+}
+
+.socialicons{
+		 padding: 8px 8px;
+    background: #E0E5EC;
+    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4), 
+               -1px -1px 3px rgba(255, 255, 255, 0.4);
     border-radius: 5px;
-    height: 30px;
-    width: 30px;
-  }
+}
 
-  .socialicons:hover {
-    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4),
-      inset -1px -1px 3px rgba(255, 255, 255, 0.4);
-  }
+.socialicons:hover{
+    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4), 
+               inset -1px -1px 3px rgba(255, 255, 255, 0.4);
+}
 
-  .icons {
-    height: 50%;
-    width: 50%;
-    margin: 0;
-    margin-top: 9.3px;
-    padding: 0;
-  }
+.socialicons:hover span{
+    display: inline-block;
+    transform: scale(0.98);
+}
 
-  #footer {
-    margin: auto;
-    margin-top: 60px;
-  }
+#behance{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+}
+
+#github{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 56px;
+}
+
+#dribbble{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 112px;
+}
+
+/* Side image */
+#sideimage{
+    visibility: hidden;
+}: hidden;
+};
+}dden;
+}: hidden;
+}n;
+}: hidden;
+};
+}
+}
+}: hidden;
+}: hidden;
+};
 }
