@@ -226,3 +226,129 @@
 #sideimage{
     visibility: hidden;
 }
+
+/* ---------------------------------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+	body{
+    margin: auto;
+    width: 100%;
+    align: auto;
+    font-family: Raleway, Poppins, Roboto, sans-serif;
+    min-height: 100vh;
+    background-color: #202a2e;
+    padding: 0;
+}
+
+/* Title Bar */
+/* Andro. */
+#branding{
+    color: white;
+}
+
+#dot{
+    background-color: #202a2e;
+}
+
+/* Tabs */
+#contact{
+    color: #8b8b8b;
+}
+
+/* Body */
+#textbox{
+    background: #202a2e;
+    box-shadow: inset 5px 5px 16px rgba(0, 0, 0, 0.15), 
+                inset -7px -7px 5px rgba(255, 255, 255, 0.02);
+}
+
+#toptext{
+    color: #ffffff;
+}
+
+#neodot{
+    color: #ffffff;
+}
+
+/* Button  */
+#abtme{
+    background: #202a2e;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15), 
+               -2px -2px 8px rgba(255, 255, 255, 0.02);
+    color: #ffffff;
+}
+
+#abtme:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.02);
+}
+
+
+/* Dark Mode button */
+.darkl{
+    position: absolute;
+    display: block;
+    padding: 8px 8px;
+    background: #202a2e;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               -2px -2px 5px rgba(255, 255, 255, 0.02);
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    left: 335px;
+    top: 630px;
+}
+
+.darky{
+    display: none;
+}
+
+.darkl:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.02);
+}
+
+.darkl:hover span{
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+/* Social Icons */
+.socialicons{
+    background: #202a2e;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               -2px -2px 5px rgba(255, 255, 255, 0.02);
+}
+
+.socialiconsl{
+		 padding: 8px 8px;
+		 display: block;
+    background: #202a2e;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               -2px -2px 5px rgba(255, 255, 255, 0.02);
+    border-radius: 5px;
+}
+
+.socialicons:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               inset -2px -2px 5px rgba(255, 255, 255, 0.02);
+}
+
+.socialiconsl:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               inset -2px -2px 5px rgba(255, 255, 255, 0.02);
+}
+
+#github{
+    display: none;
+}
+
+#githubl{
+    position: absolute;
+    display: block;
+    align: center;
+    width: 20px;
+    height: 20px;
+    left: 56px;
+}
+}
