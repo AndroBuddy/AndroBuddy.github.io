@@ -1,16 +1,17 @@
- body{
+body.dark{
     margin: auto;
     width: 100%;
     align: auto;
     font-family: Raleway, Poppins, Roboto, sans-serif;
     min-height: 100vh;
-    background-color: #e0e5ec;
+    background-color: #202a2e;
     padding: 0;
 }
 
 /* Title Bar */
-#title{
+.dark #title{
     position: absolute;
+    background-color: #202a2e;
     width: 333.77px;
     height: 20px;
     left: 39px;
@@ -18,8 +19,10 @@
 }
 
 /* Andro. */
-#branding{
+.dark #branding{
     font-family: Poppins;
+    color: white;
+    background-color: #202a2e;
     font-weight: 600;
     margin: 0;
     margin-top: 0;
@@ -27,56 +30,63 @@
     float: left;
 }
 
-#dot{
+.dark #dot{
     font-family: Poppins;
+    background-color: #202a2e;
     font-size: 18px;
     color: #63abff;
 }
 
 /* Tabs */
-.tabs{
+.dark .tabs{
     font-family: Roboto;
+    background-color: #202a2e;
     font-weight: bold;
     font-size: 12px;
 }
 
-#home{
+.dark #home{
     position: absolute;
+    background-color: #202a2e;
     left: 68%;
     top: calc(50% - 15px/2 + 2px);
     color: #6779FF;
     text-decoration: none;
 }
 
-#contact{
+.dark #contact{
     position: absolute;
+    background-color: #202a2e;
+    color: #8b8b8b;
     left: 86%;
     top: calc(50% - 15px/2 + 2px);
-    color: #424242;
     text-decoration: none;
 }
 
 /* Body */
-#main{
+.dark #main{
     position: absolute;
-    left: 39px;
-    top: 100px;
+    background-color: #202a2e;
     width: 333px;
     height: 526px;
+    left: 39px;
+    top: 100px;
 } 
 
-#textbox{
+.dark #textbox{
     position: absolute;
     width: 333px;
     height: 380px;
-    background: #E0E5EC;
-    box-shadow: inset 4px 4px 16px rgba(163, 177, 198, 0.30), 
-                inset -7px -7px 16px rgba(255, 255, 255, 0.40);
+    background: #202a2e;
+    box-shadow: inset 5px 5px 16px rgba(0, 0, 0, 0.15), 
+                inset -7px -7px 5px rgba(255, 255, 255, 0.02);
     border-radius: 10px;
 }
 
- #toptext{
+.dark #toptext{
     position: absolute;
+    background-color: #202a2e;
+    color: #ffffff;
     height: 98px;
     width: 291px; 
     left: 21px;
@@ -87,17 +97,20 @@
     letter-spacing: 2px;
 }
 
-#neo{
+.dark #neo{
     color: #6779FF;
+    background-color: #202a2e;
 } 
 
-#neodot{
-    color: #000000;
+.dark #neodot{
     font-family: Poppins;
+    background-color: #202a2e;
+    color: #ffffff;
 }
 
-#text{
+.dark #text{
     position: absolute;
+    background-color: #202a2e;
     height: 125px;
     left: 6.31%;
     right: 6.31%;
@@ -110,40 +123,41 @@
 }
 
 /* Button  */
-#abtme{
+.dark #abtme{
     position: absolute;
     text-decoration: none;
     padding: 16px 18px;
     top: 410px;
-    background: #E0E5EC;
-    box-shadow: 8px 8px 8px rgba(163, 177, 198, 0.15 ), 
-               -8px -8px 12px rgba(255, 255, 255, 0.30);
+    background: #202a2e;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15), 
+               -2px -2px 8px rgba(255, 255, 255, 0.02);
     border-radius: 7px;
     font-family: Poppins;
     font-weight: bold;
     font-size: 18px;
     text-align: center; 
     letter-spacing: 3px;
-    color: #000000;
+    color: #ffffff;
 }
 
-#abtme:hover{
-    box-shadow: inset 3px 3px 8px rgba(163, 177, 198, 0.30), 
-               inset -3px -3px 8px rgba(255, 255, 255, 0.30);
+.dark #abtme:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.02);
 }
 
-#abtme:hover span{
+.dark #abtme:hover span{
     display: inline-block;
     transform: scale(0.98);
 }
 
 /* Dark Mode button */
-.darky{
+.dark .darkl{
     position: absolute;
+    display: block;
     padding: 8px 8px;
-    background: #E0E5EC;
-    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4), 
-               -1px -1px 3px rgba(255, 255, 255, 0.4);
+    background: #202a2e;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               -2px -2px 5px rgba(255, 255, 255, 0.02);
     border-radius: 5px;
     width: 20px;
     height: 20px;
@@ -151,44 +165,55 @@
     top: 630px;
 }
 
-.darkl{
+.dark .darky{
     display: none;
 }
 
-.darky:hover{
-    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4), 
-               inset -1px -1px 3px rgba(255, 255, 255, 0.4);
+.darkl:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.02);
 }
 
-.darky:hover span{
+.darkl:hover span{
     display: inline-block;
     transform: scale(0.98);
 }
 
 /* Social Icons */
-#social{
+.dark #social{
     position: absolute;
+    background-color: #202a2e;
     width: 147px;
     height: 35px;
     left: 39px;
     top: 630px;
 }
 
-.socialicons{
+.dark .socialicons{
 		 padding: 8px 8px;
-    background: #E0E5EC;
-    box-shadow: 1px 1px 3px rgba(163, 177, 198, 0.4), 
-               -1px -1px 3px rgba(255, 255, 255, 0.4);
+    background: #202a2e;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               -2px -2px 5px rgba(255, 255, 255, 0.02);
     border-radius: 5px;
 }
 
-.socialiconsl{
-		 display: none;
+.dark .socialiconsl{
+		 padding: 8px 8px;
+		 display: block;
+    background: #202a2e;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               -2px -2px 5px rgba(255, 255, 255, 0.02);
+    border-radius: 5px;
 }
 
 .socialicons:hover{
-    box-shadow: inset 1px 1px 3px rgba(163, 177, 198, 0.4), 
-               inset -1px -1px 3px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               inset -2px -2px 5px rgba(255, 255, 255, 0.02);
+}
+
+.dark .socialiconsl:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+               inset -2px -2px 5px rgba(255, 255, 255, 0.02);
 }
 
 .socialicons:hover span{
@@ -203,16 +228,17 @@
     left: 0px;
 }
 
-#github{
+.dark #github{
+    display: none;
+}
+
+.dark #githubl{
     position: absolute;
     display: block;
+    align: center;
     width: 20px;
     height: 20px;
     left: 56px;
-}
-
-#githubl{
-    display: none;
 }
 
 #dribbble{
