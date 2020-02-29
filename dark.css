@@ -1,142 +1,33 @@
 body.dark{
-    margin: auto;
-    width: 100%;
-    align: auto;
-    font-family: Raleway, Poppins, Roboto, sans-serif;
-    min-height: 100vh;
     background-color: #202a2e;
-    padding: 0;
 }
 
-/* Title Bar */
-.dark #title{
-    position: absolute;
-    background-color: #202a2e;
-    width: 333.77px;
-    height: 20px;
-    left: 39px;
-    top: 44px;
-}
-
-/* Andro. */
 .dark #branding{
-    font-family: Poppins;
     color: white;
-    background-color: #202a2e;
-    font-weight: 600;
-    margin: 0;
-    margin-top: 0;
-    font-size: 18px;
-    float: left;
-}
-
-.dark #dot{
-    font-family: Poppins;
-    background-color: #202a2e;
-    font-size: 18px;
-    color: #63abff;
-}
-
-/* Tabs */
-.dark .tabs{
-    font-family: Roboto;
-    background-color: #202a2e;
-    font-weight: bold;
-    font-size: 12px;
-}
-
-.dark #home{
-    position: absolute;
-    background-color: #202a2e;
-    left: 68%;
-    top: calc(50% - 15px/2 + 2px);
-    color: #6779FF;
-    text-decoration: none;
 }
 
 .dark #contact{
-    position: absolute;
-    background-color: #202a2e;
     color: #8b8b8b;
-    left: 86%;
-    top: calc(50% - 15px/2 + 2px);
-    text-decoration: none;
 }
 
-/* Body */
-.dark #main{
-    position: absolute;
-    background-color: #202a2e;
-    width: 333px;
-    height: 526px;
-    left: 39px;
-    top: 100px;
-} 
-
 .dark #textbox{
-    position: absolute;
-    width: 333px;
-    height: 380px;
     background: #202a2e;
     box-shadow: inset 5px 5px 16px rgba(0, 0, 0, 0.15), 
                 inset -7px -7px 5px rgba(255, 255, 255, 0.02);
-    border-radius: 10px;
 }
 
 .dark #toptext{
-    position: absolute;
-    background-color: #202a2e;
     color: #ffffff;
-    height: 98px;
-    width: 291px; 
-    left: 21px;
-    font-family: Raleway;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 45px;
-    letter-spacing: 2px;
 }
-
-.dark #neo{
-    color: #6779FF;
-    background-color: #202a2e;
-} 
 
 .dark #neodot{
-    font-family: Poppins;
-    background-color: #202a2e;
     color: #ffffff;
 }
 
-.dark #text{
-    position: absolute;
-    background-color: #202a2e;
-    height: 125px;
-    left: 6.31%;
-    right: 6.31%;
-    top: calc(50% - 125px/2 + 17px);
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24.5px;
-    color: #8B8B8B;
-}
-
-/* Button  */
 .dark #abtme{
-    position: absolute;
-    text-decoration: none;
-    padding: 16px 18px;
-    top: 410px;
-    background: #202a2e;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15), 
                -2px -2px 8px rgba(255, 255, 255, 0.02);
-    border-radius: 7px;
-    font-family: Poppins;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center; 
-    letter-spacing: 3px;
+    background: #202a2e;     
     color: #ffffff;
 }
 
@@ -145,12 +36,6 @@ body.dark{
                 inset -2px -2px 5px rgba(255, 255, 255, 0.02);
 }
 
-.dark #abtme:hover span{
-    display: inline-block;
-    transform: scale(0.98);
-}
-
-/* Dark Mode button */
 .dark .darkl{
     position: absolute;
     display: block;
@@ -179,27 +64,15 @@ body.dark{
     transform: scale(0.98);
 }
 
-/* Social Icons */
-.dark #social{
-    position: absolute;
-    background-color: #202a2e;
-    width: 147px;
-    height: 35px;
-    left: 39px;
-    top: 630px;
-}
-
 .dark .socialicons{
-		 padding: 8px 8px;
     background: #202a2e;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
                -2px -2px 5px rgba(255, 255, 255, 0.02);
-    border-radius: 5px;
 }
 
-.dark .socialiconsl{
-		 padding: 8px 8px;
-		 display: block;
+.dark .socialiconsl{ 
+    padding: 8px 8px;
+    display: block;
     background: #202a2e;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
                -2px -2px 5px rgba(255, 255, 255, 0.02);
@@ -216,18 +89,6 @@ body.dark{
                inset -2px -2px 5px rgba(255, 255, 255, 0.02);
 }
 
-.socialicons:hover span{
-    display: inline-block;
-    transform: scale(0.98);
-}
-
-#behance{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 0px;
-}
-
 .dark #github{
     display: none;
 }
@@ -241,14 +102,33 @@ body.dark{
     left: 56px;
 }
 
-#dribbble{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 112px;
+.dark #about{
+    color: white;
 }
 
-/* Side image */
-#sideimage{
-    visibility: hidden;
+.dark .box{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25), 
+               -2px -2px 8px rgba(255, 255, 255, 0.04);
+    background: #202a2e;
 }
+
+.dark #mywork{
+    color: #FFB9FFE8;
+}
+
+.dark #blogtext{
+    color: white;
+}
+
+.dark #blog{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15), 
+               -2px -2px 8px rgba(255, 255, 255, 0.02);
+    background: #202a2e;
+    color: white;
+}
+
+.dark #blog:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.02);
+}
+

@@ -2,8 +2,7 @@
     margin: auto;
     width: 100%;
     align: auto;
-    font-family: Raleway, Poppins, Roboto, sans-serif;
-    min-height: 100vh;
+    height: 1540px;
     background-color: #e0e5ec;
     padding: 0;
 }
@@ -222,6 +221,129 @@
     left: 112px;
 }
 
+/* About Me title */
+#abt-title{
+    position: absolute;
+    width: 333.77px;
+    height: 20px;
+    left: 39px;
+    top: 780px;
+}
+
+#about{
+    font-family: Poppins;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 0;
+    font-size: 18px;
+    float: left;
+}
+
+#abtdot{
+    font-family: Poppins;
+    font-size: 18px;
+    color: #63abff;
+}
+
+#abt-body{
+    position: absolute;
+    width: 333.77px;
+    height: 537px;
+    left: 39px;
+    top: 818px;
+}
+
+.scroller{
+    position: relative;
+    overflow: visible;
+    top: 5px;
+    overflow-y: auto;
+    width:411px;
+    height: 500px;
+    margin-left:-37px;
+    margin-right:-37px;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.work-tabs{
+    overflow-y: visible;
+    white-space: nowrap;	
+}
+
+.box{
+    display: inline-block;
+    background: #E0E5EC;
+    width: 233px;
+    height: 375px;  
+    margin-right: 20px;
+    margin-top: 15px;
+    box-shadow: 8px 8px 8px rgba(163, 177, 198, 0.15 ), 
+                -8px -8px 12px rgba(255, 255, 255, 0.30);
+    border-radius: 10px;
+}
+
+.box:first-child{
+    margin-right: 20px;
+    margin-left: 39px;
+}
+
+.abt{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24.5px;
+    letter-spacing: 0.02em;
+    color: #8B8B8B;
+}
+
+#name{
+    font-family: Poppins;
+    font-size: 16px;
+    color: #63abff;
+}
+
+#mywork{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24.5px;
+    letter-spacing: 0.02em;
+    color: #433f3f;
+}
+
+#blogtext{
+    position: absolute;
+    width: 333.77px;
+    height: 50px;
+    left: 39px;
+    top: 1398px;
+}
+
+#blog{
+    position: absolute;
+    text-decoration: none;
+    padding: 16px 18px;
+    top: 35px;
+    background: #E0E5EC;
+    box-shadow: 8px 8px 8px rgba(163, 177, 198, 0.15 ), 
+               -8px -8px 12px rgba(255, 255, 255, 0.30);
+    border-radius: 7px;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center; 
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+#blog:hover{
+    box-shadow: inset 8px 8px 8px rgba(163, 177, 198, 0.15 ), 
+               inset -8px -8px 12px rgba(255, 255, 255, 0.30);
+}
+
 /* Side image */
 #sideimage{
     visibility: hidden;
@@ -230,32 +352,18 @@
 /* ---------------------------------------------------------- */
 
 @media (prefers-color-scheme: dark) {
-	body{
-    margin: auto;
-    width: 100%;
-    align: auto;
-    font-family: Raleway, Poppins, Roboto, sans-serif;
-    min-height: 100vh;
+body{
     background-color: #202a2e;
-    padding: 0;
 }
 
-/* Title Bar */
-/* Andro. */
 #branding{
     color: white;
 }
 
-#dot{
-    background-color: #202a2e;
-}
-
-/* Tabs */
 #contact{
     color: #8b8b8b;
 }
 
-/* Body */
 #textbox{
     background: #202a2e;
     box-shadow: inset 5px 5px 16px rgba(0, 0, 0, 0.15), 
@@ -270,11 +378,10 @@
     color: #ffffff;
 }
 
-/* Button  */
 #abtme{
-    background: #202a2e;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15), 
                -2px -2px 8px rgba(255, 255, 255, 0.02);
+    background: #202a2e;     
     color: #ffffff;
 }
 
@@ -283,8 +390,6 @@
                 inset -2px -2px 5px rgba(255, 255, 255, 0.02);
 }
 
-
-/* Dark Mode button */
 .darkl{
     position: absolute;
     display: block;
@@ -313,16 +418,15 @@
     transform: scale(0.98);
 }
 
-/* Social Icons */
 .socialicons{
     background: #202a2e;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
                -2px -2px 5px rgba(255, 255, 255, 0.02);
 }
 
-.socialiconsl{
-		 padding: 8px 8px;
-		 display: block;
+.socialiconsl{ 
+    padding: 8px 8px;
+    display: block;
     background: #202a2e;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15), 
                -2px -2px 5px rgba(255, 255, 255, 0.02);
@@ -350,5 +454,35 @@
     width: 20px;
     height: 20px;
     left: 56px;
+}
+
+#about{
+    color: white;
+}
+
+.box{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25), 
+               -2px -2px 8px rgba(255, 255, 255, 0.04);
+    background: #202a2e;
+}
+
+#mywork{
+    color: #FFB9FFE8;
+}
+
+#blogtext{
+    color: white;
+}
+
+#blog{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15), 
+               -2px -2px 8px rgba(255, 255, 255, 0.02);
+    background: #202a2e;
+    color: white;
+}
+
+#blog:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.15), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.02);
 }
 }
