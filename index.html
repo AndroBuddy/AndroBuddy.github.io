@@ -29,6 +29,10 @@
         <title>Andro.</title>
     </head>
     <body>
+        <!--CSS Spinner-->
+        <div class="spinner-wrapper">
+          <div class="spinner"></div>
+        </div>
         <div class="lander">
             <div class="text-container">
                 <h1 class="tracking-in-contract-bck">Hel<br>lo<span>.</span></h1>
@@ -113,5 +117,18 @@
                 </div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            //Preloader
+            preloaderFadeOutTime = 500;
+        
+            function hidePreloader() {
+              var preloader = $('.spinner-wrapper');
+              preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+          });
+        </script>
     </body>
-</html>
+</html> 
